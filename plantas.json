@@ -1,0 +1,103 @@
+[
+    {
+        "id": 1,
+        "nombre": "Quinua",
+        "nombreCientifico": "Chenopodium quinoa",
+        "altitud": {
+            "min": 2500,
+            "max": 4000
+        },
+        "temperatura": {
+            "min": 7,
+            "max": 20
+        },
+        "humedad": {
+            "min": 40,
+            "max": 70
+        },
+        "espacioPorPlanta": 0.2,
+        "suelo": "Bien drenado",
+        "luz": "Alta"
+    },
+    {
+        "id": 2,
+        "nombre": "Papa",
+        "nombreCientifico": "Solanum tuberosum",
+        "altitud": {
+            "min": 2500,
+            "max": 4000
+        },
+        "temperatura": {
+            "min": 10,
+            "max": 20
+        },
+        "humedad": {
+            "min": 60,
+            "max": 80
+        },
+        "espacioPorPlanta": 0.3,
+        "suelo": "Suelto y bien drenado",
+        "luz": "Alta"
+    },
+    {
+        "id": 3,
+        "nombre": "Haba",
+        "nombreCientifico": "Vicia faba",
+        "altitud": {
+            "min": 2500,
+            "max": 3500
+        },
+        "temperatura": {
+            "min": 10,
+            "max": 20
+        },
+        "humedad": {
+            "min": 50,
+            "max": 75
+        },
+        "espacioPorPlanta": 0.3,
+        "suelo": "Franco y bien drenado",
+        "luz": "Alta"
+    },
+    {
+        "id": 4,
+        "nombre": "Oca",
+        "nombreCientifico": "Oxalis tuberosa",
+        "altitud": {
+            "min": 2800,
+            "max": 4000
+        },
+        "temperatura": {
+            "min": 8,
+            "max": 18
+        },
+        "humedad": {
+            "min": 50,
+            "max": 75
+        },
+        "espacioPorPlanta": 0.25,
+        "suelo": "Suelto y bien drenado",
+        "luz": "Alta"
+    },
+    {
+        "id": 5,
+        "nombre": "Olluco",
+        "nombreCientifico": "Ullucus tuberosus",
+        "altitud": {
+            "min": 2500,
+            "max": 4000
+        },
+        "temperatura": {
+            "min": 8,
+            "max": 18
+        },
+        "humedad": {
+            "min": 50,
+            "max": 80
+        },
+        "espacioPorPlanta": 0.25,
+        "suelo": "Suelto y húmedo",
+        "luz": "Alta"
+    }
+]
+
