@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plantas de Áncash</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==========================================
+         ENCABEZADO
+    =========================================== -->
+
+    <header>
+
+        <h1>🌱 Plantas de Áncash</h1>
+
+        <p>
+            Sistema interactivo para el análisis de cultivos
+        </p>
+
+    </header>
+
+
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+    =========================================== -->
+
+    <main>
+
+
+        <!-- ======================================
+             MENÚ
+        ======================================= -->
+
+        <section class="menu">
+
+            <button onclick="mostrarSeccion('buscar')">
+                🔎 Buscar planta
+            </button>
+
+
+            <button onclick="mostrarSeccion('zona')">
+                🗺️ Analizar mi zona
+            </button>
+
+
+            <button onclick="mostrarSeccion('recomendacion')">
+                🧠 Recomendaciones
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================================
+             BUSCAR PLANTA
+        ======================================= -->
+
+        <section
+            id="buscar"
+            class="seccion"
+        >
+
+            <h2>🔎 Buscar una planta</h2>
+
+
+            <p>
+                Busca una planta para conocer
+                sus condiciones de cultivo.
+            </p>
+
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Ej. Quinua"
+            >
+
+
+            <button onclick="buscarPlanta()">
+                🔎 Buscar
+            </button>
+
+
+            <div id="resultadoBusqueda"></div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             ANALIZAR ZONA
+        ======================================= -->
+
+        <section
+            id="zona"
+            class="seccion oculto"
+        >
+
+            <h2>🗺️ Analizar mi zona</h2>
+
+
+            <p>
+                Introduce las condiciones de tu
+                terreno para descubrir qué plantas
+                pueden cultivarse.
+            </p>
+
+
+
+            <label for="lugar">
+                📍 Lugar
+            </label>
+
+            <input
+                type="text"
+                id="lugar"
+                placeholder="Ej. Huaraz"
+            >
+
+
+
+            <label for="altitud">
+                ⛰️ Altitud (metros)
+            </label>
+
+            <input
+                type="number"
+                id="altitud"
+                placeholder="Ej. 3050"
+            >
+
+
+
+            <label for="temperatura">
+                🌡️ Temperatura (°C)
+            </label>
+
+            <input
+                type="number"
+                id="temperatura"
+                step="0.1"
+                placeholder="Ej. 17.5"
+            >
+
+
+
+            <label for="humedad">
+                💧 Humedad del suelo (%)
+            </label>
+
+            <input
+                type="number"
+                id="humedad"
+                placeholder="Ej. 60"
+            >
+
+
+
+            <label for="area">
+                📐 Área disponible (m²)
+            </label>
+
+            <input
+                type="number"
+                id="area"
+                step="0.1"
+                placeholder="Ej. 20"
+            >
+
+
+
+            <button onclick="analizarZona()">
+                🧠 ANALIZAR ZONA
+            </button>
+
+
+            <div id="resultadoZona"></div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             RECOMENDACIONES
+        ======================================= -->
+
+        <section
+            id="recomendacion"
+            class="seccion oculto"
+        >
+
+            <h2>🧠 Recomendaciones</h2>
+
+
+            <p>
+                Estas son las plantas más adecuadas
+                según las condiciones de tu zona.
+            </p>
+
+
+            <div id="resultadoRecomendacion">
+
+                <div class="ficha-planta">
+
+                    <h3>🌱 Todavía no hay un análisis</h3>
+
+                    <p>
+                        Primero ve a
+                        <strong>🗺️ Analizar mi zona</strong>,
+                        introduce las condiciones de tu terreno
+                        y pulsa <strong>ANALIZAR ZONA</strong>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         JAVASCRIPT
+    =========================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
