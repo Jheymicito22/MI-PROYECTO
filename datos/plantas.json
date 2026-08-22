@@ -1,1 +1,2507 @@
-
+[
+    {
+        "id": 1,
+        "nombre": "Quinua",
+        "nombreCientifico": "Chenopodium quinoa",
+        "imagen": "quinua.jpg",
+        "altitud": {
+            "min": 2500.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 8.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "suelo": "franco, fértil, ligeramente arenoso y con buen drenaje; tolera suelos relativamente pobres.",
+        "luz": "sol directo.",
+        "espacioRango": "0,05–0,10 m²/planta",
+        "numeroFuente": 936
+    },
+    {
+        "id": 2,
+        "nombre": "Papa",
+        "nombreCientifico": "Solanum tuberosum",
+        "imagen": "papa.jpg",
+        "altitud": {
+            "min": 2500,
+            "max": 4000
+        },
+        "temperatura": {
+            "min": 10,
+            "max": 20
+        },
+        "humedad": {
+            "min": 60,
+            "max": 80
+        },
+        "espacioPorPlanta": 0.3,
+        "suelo": "Suelto y bien drenado",
+        "luz": "Alta"
+    },
+    {
+        "id": 3,
+        "nombre": "Haba",
+        "nombreCientifico": "Vicia faba",
+        "imagen": "haba.jpg",
+        "altitud": {
+            "min": 2000.0,
+            "max": 3800.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.175,
+        "suelo": "profundo, fértil, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "espacioRango": "0,10–0,25 m²/planta",
+        "numeroFuente": 943
+    },
+    {
+        "id": 4,
+        "nombre": "Oca",
+        "nombreCientifico": "Oxalis tuberosa",
+        "imagen": "oca.jpg",
+        "altitud": {
+            "min": 2500.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.2,
+        "suelo": "suelto, fértil, profundo, con materia orgánica y buen drenaje.",
+        "luz": "sol directo.",
+        "espacioRango": "0,15–0,25 m²/planta",
+        "numeroFuente": 944
+    },
+    {
+        "id": 5,
+        "nombre": "Olluco / melloco",
+        "nombreCientifico": "Ullucus tuberosus",
+        "imagen": "olluco.jpg",
+        "altitud": {
+            "min": 2500.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.2,
+        "suelo": "fértil, suelto, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "espacioRango": "0,15–0,25 m²/planta",
+        "numeroFuente": 945
+    },
+    {
+        "id": 6,
+        "nombre": "Maíz amarillo",
+        "nombreCientifico": "Zea mays",
+        "imagen": "maiz-amarillo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.2,
+        "espacioRango": "0,15–0,25 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, con buena retención de humedad y buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 931
+    },
+    {
+        "id": 7,
+        "nombre": "Maíz morado",
+        "nombreCientifico": "Zea mays L.",
+        "imagen": "maiz-morado.jpg",
+        "altitud": {
+            "min": 2000.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.2,
+        "espacioRango": "0,15–0,25 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 932
+    },
+    {
+        "id": 8,
+        "nombre": "Maíz blanco gigante / maíz del Cusco",
+        "nombreCientifico": "Zea mays L.",
+        "imagen": "maiz-blanco-gigante-maiz-del-cusco.jpg",
+        "altitud": {
+            "min": 2500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.25,
+        "espacioRango": "0,20–0,30 m²/planta",
+        "suelo": "profundo, fértil, bien drenado y rico en materia orgánica.",
+        "luz": "sol directo.",
+        "numeroFuente": 933
+    },
+    {
+        "id": 9,
+        "nombre": "Maíz chulpe",
+        "nombreCientifico": "Zea mays L.",
+        "imagen": "maiz-chulpe.jpg",
+        "altitud": {
+            "min": 2000.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.2,
+        "espacioRango": "0,15–0,25 m²/planta",
+        "suelo": "fértil, profundo, suelto y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 934
+    },
+    {
+        "id": 10,
+        "nombre": "Maíz cancha",
+        "nombreCientifico": "Zea mays L.",
+        "imagen": "maiz-cancha.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.2,
+        "espacioRango": "0,15–0,25 m²/planta",
+        "suelo": "profundo, fértil, con materia orgánica y buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 935
+    },
+    {
+        "id": 11,
+        "nombre": "Kiwicha / amaranto",
+        "nombreCientifico": "Amaranthus caudatus",
+        "imagen": "kiwicha-amaranto.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, ligero, bien drenado y rico en materia orgánica.",
+        "luz": "sol directo.",
+        "numeroFuente": 937
+    },
+    {
+        "id": 12,
+        "nombre": "Cañihua / kañiwa",
+        "nombreCientifico": "Chenopodium pallidicaule",
+        "imagen": "canihua-kaniwa.jpg",
+        "altitud": {
+            "min": 3500.0,
+            "max": 4500.0
+        },
+        "temperatura": {
+            "min": 5.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "franco-arenoso, bien drenado y de fertilidad moderada.",
+        "luz": "sol directo.",
+        "numeroFuente": 938
+    },
+    {
+        "id": 13,
+        "nombre": "Trigo",
+        "nombreCientifico": "Triticum aestivum",
+        "imagen": "trigo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.035,
+        "espacioRango": "0,02–0,05 m²/planta",
+        "suelo": "fértil, profundo, franco y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 939
+    },
+    {
+        "id": 14,
+        "nombre": "Cebada",
+        "nombreCientifico": "Hordeum vulgare",
+        "imagen": "cebada.jpg",
+        "altitud": {
+            "min": 2000.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.035,
+        "espacioRango": "0,02–0,05 m²/planta",
+        "suelo": "franco, fértil, bien drenado y con buena disponibilidad de nutrientes.",
+        "luz": "sol directo.",
+        "numeroFuente": 940
+    },
+    {
+        "id": 15,
+        "nombre": "Avena",
+        "nombreCientifico": "Avena sativa",
+        "imagen": "avena.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.035,
+        "espacioRango": "0,02–0,05 m²/planta",
+        "suelo": "fértil, profundo, húmedo pero bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 941
+    },
+    {
+        "id": 16,
+        "nombre": "Tarwi / chocho / lupino andino",
+        "nombreCientifico": "Lupinus mutabilis",
+        "imagen": "tarwi-chocho-lupino-andino.jpg",
+        "altitud": {
+            "min": 2000.0,
+            "max": 3800.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.15000000000000002,
+        "espacioRango": "0,10–0,20 m²/planta",
+        "suelo": "franco-arenoso, fértil, ligeramente ácido y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 942
+    },
+    {
+        "id": 18,
+        "nombre": "Mashua / isaño",
+        "nombreCientifico": "Tropaeolum tuberosum",
+        "imagen": "mashua-isano.jpg",
+        "altitud": {
+            "min": 2500.0,
+            "max": 4000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.2,
+        "espacioRango": "0,15–0,25 m²/planta",
+        "suelo": "suelto, fértil, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 946
+    },
+    {
+        "id": 19,
+        "nombre": "Camote / batata",
+        "nombreCientifico": "Ipomoea batatas",
+        "imagen": "camote-batata.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.30000000000000004,
+        "espacioRango": "0,20–0,40 m²/planta",
+        "suelo": "suelto, arenoso, profundo, fértil y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 947
+    },
+    {
+        "id": 20,
+        "nombre": "Yacón",
+        "nombreCientifico": "Smallanthus sonchifolius",
+        "imagen": "yacon.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 948
+    },
+    {
+        "id": 21,
+        "nombre": "Arracacha / racacha",
+        "nombreCientifico": "Arracacia xanthorrhiza",
+        "imagen": "arracacha-racacha.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.22499999999999998,
+        "espacioRango": "0,15–0,30 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 949
+    },
+    {
+        "id": 22,
+        "nombre": "Maca",
+        "nombreCientifico": "Lepidium meyenii",
+        "imagen": "maca.jpg",
+        "altitud": {
+            "min": 3500.0,
+            "max": 4500.0
+        },
+        "temperatura": {
+            "min": 4.0,
+            "max": 15.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "suelto, franco-arenoso, con buen drenaje y materia orgánica.",
+        "luz": "sol directo.",
+        "numeroFuente": 950
+    },
+    {
+        "id": 23,
+        "nombre": "Nabo",
+        "nombreCientifico": "Brassica rapa subsp. rapa",
+        "imagen": "nabo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "suelto, fértil, profundo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 951
+    },
+    {
+        "id": 24,
+        "nombre": "Alcachofa",
+        "nombreCientifico": "Cynara cardunculus var. scolymus",
+        "imagen": "alcachofa.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 1.5,
+        "espacioRango": "1–2 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 952
+    },
+    {
+        "id": 25,
+        "nombre": "Espárrago",
+        "nombreCientifico": "Asparagus officinalis",
+        "imagen": "esparrago.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "profundo, fértil, arenoso, rico en materia orgánica y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 953
+    },
+    {
+        "id": 26,
+        "nombre": "Berenjena",
+        "nombreCientifico": "Solanum melongena",
+        "imagen": "berenjena.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 954
+    },
+    {
+        "id": 27,
+        "nombre": "Pimiento",
+        "nombreCientifico": "Capsicum annuum",
+        "imagen": "pimiento.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.30000000000000004,
+        "espacioRango": "0,20–0,40 m²/planta",
+        "suelo": "fértil, ligero, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 955
+    },
+    {
+        "id": 28,
+        "nombre": "Ají amarillo",
+        "nombreCientifico": "Capsicum baccatum",
+        "imagen": "aji-amarillo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 956
+    },
+    {
+        "id": 29,
+        "nombre": "Rocoto",
+        "nombreCientifico": "Capsicum pubescens",
+        "imagen": "rocoto.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 957
+    },
+    {
+        "id": 30,
+        "nombre": "Lechuga",
+        "nombreCientifico": "Lactuca sativa",
+        "imagen": "lechuga.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.15000000000000002,
+        "espacioRango": "0,10–0,20 m²/planta",
+        "suelo": "fértil, suelto, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 958
+    },
+    {
+        "id": 31,
+        "nombre": "Espinaca",
+        "nombreCientifico": "Spinacia oleracea",
+        "imagen": "espinaca.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "fértil, profundo, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 959
+    },
+    {
+        "id": 32,
+        "nombre": "Zanahoria",
+        "nombreCientifico": "Daucus carota subsp. sativus",
+        "imagen": "zanahoria.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "profundo, suelto, arenoso, fértil, sin piedras y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 960
+    },
+    {
+        "id": 33,
+        "nombre": "Remolacha / beterraga",
+        "nombreCientifico": "Beta vulgaris",
+        "imagen": "remolacha-beterraga.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 961
+    },
+    {
+        "id": 34,
+        "nombre": "Rábano",
+        "nombreCientifico": "Raphanus sativus",
+        "imagen": "rabano.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "suelto, fértil, ligero, húmedo y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 962
+    },
+    {
+        "id": 35,
+        "nombre": "Cebolla",
+        "nombreCientifico": "Allium cepa",
+        "imagen": "cebolla.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 13.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "fértil, suelto, profundo, con materia orgánica y buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 963
+    },
+    {
+        "id": 36,
+        "nombre": "Ajo",
+        "nombreCientifico": "Allium sativum",
+        "imagen": "ajo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.06,
+        "espacioRango": "0,04–0,08 m²/planta",
+        "suelo": "suelto, fértil, rico en materia orgánica y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 964
+    },
+    {
+        "id": 37,
+        "nombre": "Poro / puerro",
+        "nombreCientifico": "Allium ampeloprasum var. porrum",
+        "imagen": "poro-puerro.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "profundo, fértil, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 965
+    },
+    {
+        "id": 38,
+        "nombre": "Brócoli",
+        "nombreCientifico": "Brassica oleracea var. italica",
+        "imagen": "brocoli.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 966
+    },
+    {
+        "id": 39,
+        "nombre": "Coliflor",
+        "nombreCientifico": "Brassica oleracea var. botrytis",
+        "imagen": "coliflor.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 967
+    },
+    {
+        "id": 40,
+        "nombre": "Col / repollo",
+        "nombreCientifico": "Brassica oleracea var. capitata",
+        "imagen": "col-repollo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 968
+    },
+    {
+        "id": 41,
+        "nombre": "Col rizada / kale",
+        "nombreCientifico": "Brassica oleracea var. acephala",
+        "imagen": "col-rizada-kale.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.22499999999999998,
+        "espacioRango": "0,15–0,30 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 969
+    },
+    {
+        "id": 42,
+        "nombre": "Pepino",
+        "nombreCientifico": "Cucumis sativus",
+        "imagen": "pepino.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.44999999999999996,
+        "espacioRango": "0,30–0,60 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, húmedo pero bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 970
+    },
+    {
+        "id": 43,
+        "nombre": "Zapallo",
+        "nombreCientifico": "Cucurbita maxima",
+        "imagen": "zapallo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 2.0,
+        "espacioRango": "1–3 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 971
+    },
+    {
+        "id": 44,
+        "nombre": "Zapallito italiano / calabacín",
+        "nombreCientifico": "Cucurbita pepo",
+        "imagen": "zapallito-italiano-calabacin.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 972
+    },
+    {
+        "id": 45,
+        "nombre": "Arveja / guisante",
+        "nombreCientifico": "Pisum sativum",
+        "imagen": "arveja-guisante.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, ligero, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 973
+    },
+    {
+        "id": 46,
+        "nombre": "Frejol / frijol",
+        "nombreCientifico": "Phaseolus vulgaris",
+        "imagen": "frejol-frijol.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.15000000000000002,
+        "espacioRango": "0,10–0,20 m²/planta",
+        "suelo": "fértil, suelto, bien drenado y rico en materia orgánica.",
+        "luz": "sol directo.",
+        "numeroFuente": 974
+    },
+    {
+        "id": 47,
+        "nombre": "Tomate cherry",
+        "nombreCientifico": "Solanum lycopersicum var. cerasiforme",
+        "imagen": "tomate-cherry.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, ligeramente ácido y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 975
+    },
+    {
+        "id": 48,
+        "nombre": "Palta / aguacate",
+        "nombreCientifico": "Persea americana",
+        "imagen": "palta-aguacate.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 18.5,
+        "espacioRango": "12–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 976
+    },
+    {
+        "id": 49,
+        "nombre": "Mango",
+        "nombreCientifico": "Mangifera indica",
+        "imagen": "mango.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 37.5,
+        "espacioRango": "25–50 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido o neutro y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 977
+    },
+    {
+        "id": 50,
+        "nombre": "Papaya",
+        "nombreCientifico": "Carica papaya",
+        "imagen": "papaya.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 22.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, húmedo pero con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 978
+    },
+    {
+        "id": 51,
+        "nombre": "Plátano / banano",
+        "nombreCientifico": "Musa × paradisiaca",
+        "imagen": "platano-banano.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1800.0
+        },
+        "temperatura": {
+            "min": 22.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 9.0,
+        "espacioRango": "6–12 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 979
+    },
+    {
+        "id": 52,
+        "nombre": "Maracuyá / granadilla morada",
+        "nombreCientifico": "Passiflora edulis",
+        "imagen": "maracuya-granadilla-morada.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 980
+    },
+    {
+        "id": 53,
+        "nombre": "Granadilla",
+        "nombreCientifico": "Passiflora ligularis",
+        "imagen": "granadilla.jpg",
+        "altitud": {
+            "min": 1200.0,
+            "max": 2800.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, ligeramente ácido y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 981
+    },
+    {
+        "id": 54,
+        "nombre": "Chirimoya",
+        "nombreCientifico": "Annona cherimola",
+        "imagen": "chirimoya.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 18.5,
+        "espacioRango": "12–25 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 982
+    },
+    {
+        "id": 55,
+        "nombre": "Lúcuma",
+        "nombreCientifico": "Pouteria lucuma",
+        "imagen": "lucuma.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 23.0,
+        "espacioRango": "16–30 m²/planta",
+        "suelo": "profundo, fértil, bien drenado, con materia orgánica y tolerante a condiciones relativamente secas.",
+        "luz": "sol directo.",
+        "numeroFuente": 983
+    },
+    {
+        "id": 56,
+        "nombre": "Granada",
+        "nombreCientifico": "Punica granatum",
+        "imagen": "granada.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 12.5,
+        "espacioRango": "9–16 m²/planta",
+        "suelo": "profundo, fértil, ligero y con buen drenaje; tolera sequía.",
+        "luz": "sol directo.",
+        "numeroFuente": 984
+    },
+    {
+        "id": 57,
+        "nombre": "Higo",
+        "nombreCientifico": "Ficus carica",
+        "imagen": "higo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 23.0,
+        "espacioRango": "16–30 m²/planta",
+        "suelo": "profundo, fértil, seco a moderadamente húmedo y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 985
+    },
+    {
+        "id": 58,
+        "nombre": "Manzana / manzano",
+        "nombreCientifico": "Malus domestica",
+        "imagen": "manzana-manzano.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 17.0,
+        "espacioRango": "9–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 986
+    },
+    {
+        "id": 59,
+        "nombre": "Durazno / melocotón",
+        "nombreCientifico": "Prunus persica",
+        "imagen": "durazno-melocoton.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 18.5,
+        "espacioRango": "12–25 m²/planta",
+        "suelo": "profundo, fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 987
+    },
+    {
+        "id": 60,
+        "nombre": "Pera / peral",
+        "nombreCientifico": "Pyrus communis",
+        "imagen": "pera-peral.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 18.5,
+        "espacioRango": "12–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, con materia orgánica y buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 988
+    },
+    {
+        "id": 61,
+        "nombre": "Ciruela / ciruelo",
+        "nombreCientifico": "Prunus domestica",
+        "imagen": "ciruela-ciruelo.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 18.5,
+        "espacioRango": "12–25 m²/planta",
+        "suelo": "profundo, fértil, bien drenado y rico en materia orgánica.",
+        "luz": "sol directo.",
+        "numeroFuente": 989
+    },
+    {
+        "id": 62,
+        "nombre": "Tuna / higo chumbo",
+        "nombreCientifico": "Opuntia ficus-indica",
+        "imagen": "tuna-higo-chumbo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 30.0,
+            "max": 50.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "arenoso o pedregoso, ligero, pobre a moderadamente fértil y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 990
+    },
+    {
+        "id": 63,
+        "nombre": "Fresa / frutilla",
+        "nombreCientifico": "Fragaria × ananassa",
+        "imagen": "fresa-frutilla.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, suelto, ligeramente ácido, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 991
+    },
+    {
+        "id": 64,
+        "nombre": "Frambuesa",
+        "nombreCientifico": "Rubus idaeus",
+        "imagen": "frambuesa.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 992
+    },
+    {
+        "id": 65,
+        "nombre": "Mora / zarzamora",
+        "nombreCientifico": "Rubus fruticosus",
+        "imagen": "mora-zarzamora.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 1.5,
+        "espacioRango": "1–2 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 993
+    },
+    {
+        "id": 66,
+        "nombre": "Arándano",
+        "nombreCientifico": "Vaccinium corymbosum",
+        "imagen": "arandano.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 1.125,
+        "espacioRango": "0,75–1,50 m²/planta",
+        "suelo": "ácido, ligero, rico en materia orgánica, húmedo pero con excelente drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 994
+    },
+    {
+        "id": 67,
+        "nombre": "Aguaymanto / uchuva / physalis",
+        "nombreCientifico": "Physalis peruviana",
+        "imagen": "aguaymanto-uchuva-physalis.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 13.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "fértil, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 995
+    },
+    {
+        "id": 68,
+        "nombre": "Pepino dulce",
+        "nombreCientifico": "Solanum muricatum",
+        "imagen": "pepino-dulce.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 996
+    },
+    {
+        "id": 69,
+        "nombre": "Granadilla amarilla",
+        "nombreCientifico": "Passiflora laurifolia",
+        "imagen": "granadilla-amarilla.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 997
+    },
+    {
+        "id": 70,
+        "nombre": "Guayaba",
+        "nombreCientifico": "Psidium guajava",
+        "imagen": "guayaba.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 20.5,
+        "espacioRango": "16–25 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 998
+    },
+    {
+        "id": 71,
+        "nombre": "Granadilla de monte",
+        "nombreCientifico": "Passiflora tripartita",
+        "imagen": "granadilla-de-monte.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "profundo, fértil, húmedo, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 999
+    },
+    {
+        "id": 72,
+        "nombre": "Tomate de árbol / sachatomate",
+        "nombreCientifico": "Solanum betaceum",
+        "imagen": "tomate-de-arbol-sachatomate.jpg",
+        "altitud": {
+            "min": 1500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 6.5,
+        "espacioRango": "4–9 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, ligeramente ácido y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1000
+    },
+    {
+        "id": 73,
+        "nombre": "Zapote",
+        "nombreCientifico": "Pouteria sapota",
+        "imagen": "zapote.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1200.0
+        },
+        "temperatura": {
+            "min": 22.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 37.5,
+        "espacioRango": "25–50 m²/planta",
+        "suelo": "profundo, fértil, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1001
+    },
+    {
+        "id": 74,
+        "nombre": "Maracuyá amarillo",
+        "nombreCientifico": "Passiflora edulis f. flavicarpa",
+        "imagen": "maracuya-amarillo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1800.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, ligeramente ácido y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1002
+    },
+    {
+        "id": 75,
+        "nombre": "Cocona",
+        "nombreCientifico": "Solanum sessiliflorum",
+        "imagen": "cocona.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "fértil, profundo, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1003
+    },
+    {
+        "id": 76,
+        "nombre": "Pitahaya / fruta del dragón",
+        "nombreCientifico": "Selenicereus undatus",
+        "imagen": "pitahaya-fruta-del-dragon.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "arenoso o franco-arenoso, fértil, ligero y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1004
+    },
+    {
+        "id": 77,
+        "nombre": "Carambola",
+        "nombreCientifico": "Averrhoa carambola",
+        "imagen": "carambola.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1000.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 20.5,
+        "espacioRango": "16–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1005
+    },
+    {
+        "id": 78,
+        "nombre": "Mandarina",
+        "nombreCientifico": "Citrus reticulata",
+        "imagen": "mandarina.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 20.5,
+        "espacioRango": "16–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1006
+    },
+    {
+        "id": 79,
+        "nombre": "Naranja",
+        "nombreCientifico": "Citrus sinensis",
+        "imagen": "naranja.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 28.0,
+        "espacioRango": "20–36 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1007
+    },
+    {
+        "id": 80,
+        "nombre": "Limón",
+        "nombreCientifico": "Citrus × limon",
+        "imagen": "limon.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 20.5,
+        "espacioRango": "16–25 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1008
+    },
+    {
+        "id": 81,
+        "nombre": "Lima",
+        "nombreCientifico": "Citrus × aurantiifolia",
+        "imagen": "lima.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 16.0,
+        "espacioRango": "12–20 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1009
+    },
+    {
+        "id": 82,
+        "nombre": "Toronja / pomelo",
+        "nombreCientifico": "Citrus × paradisi",
+        "imagen": "toronja-pomelo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 30.5,
+        "espacioRango": "25–36 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1010
+    },
+    {
+        "id": 83,
+        "nombre": "Uva / vid",
+        "nombreCientifico": "Vitis vinifera",
+        "imagen": "uva-vid.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 3.0,
+        "espacioRango": "2–4 m²/planta",
+        "suelo": "profundo, fértil, franco-arenoso y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1011
+    },
+    {
+        "id": 84,
+        "nombre": "Kiwi",
+        "nombreCientifico": "Actinidia deliciosa",
+        "imagen": "kiwi.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 6.5,
+        "espacioRango": "4–9 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1012
+    },
+    {
+        "id": 85,
+        "nombre": "Caqui / kaki",
+        "nombreCientifico": "Diospyros kaki",
+        "imagen": "caqui-kaki.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 20.5,
+        "espacioRango": "16–25 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido o neutro y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1013
+    },
+    {
+        "id": 86,
+        "nombre": "Cacao",
+        "nombreCientifico": "Theobroma cacao",
+        "imagen": "cacao.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1000.0
+        },
+        "temperatura": {
+            "min": 21.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 70.0,
+            "max": 90.0
+        },
+        "espacioPorPlanta": 12.5,
+        "espacioRango": "9–16 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo y con buen drenaje.",
+        "luz": "semisombra; tolera sol directo cuando está establecido.",
+        "numeroFuente": 1014
+    },
+    {
+        "id": 87,
+        "nombre": "Café",
+        "nombreCientifico": "Coffea arabica",
+        "imagen": "cafe.jpg",
+        "altitud": {
+            "min": 1000.0,
+            "max": 2200.0
+        },
+        "temperatura": {
+            "min": 18.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 1.5,
+        "espacioRango": "1–2 m²/planta",
+        "suelo": "profundo, fértil, ligeramente ácido, rico en materia orgánica y con buen drenaje.",
+        "luz": "semisombra o luz filtrada.",
+        "numeroFuente": 1015
+    },
+    {
+        "id": 88,
+        "nombre": "Caña de azúcar",
+        "nombreCientifico": "Saccharum officinarum",
+        "imagen": "cana-de-azucar.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1800.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.15000000000000002,
+        "espacioRango": "0,10–0,20 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1016
+    },
+    {
+        "id": 89,
+        "nombre": "Soya / soja",
+        "nombreCientifico": "Glycine max",
+        "imagen": "soya-soja.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2000.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, profundo, ligeramente ácido, con buena retención de humedad y drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1017
+    },
+    {
+        "id": 90,
+        "nombre": "Lenteja",
+        "nombreCientifico": "Lens culinaris",
+        "imagen": "lenteja.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "franco-arenoso, fértil, ligero y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1018
+    },
+    {
+        "id": 91,
+        "nombre": "Garbanzo",
+        "nombreCientifico": "Cicer arietinum",
+        "imagen": "garbanzo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "franco-arenoso, fértil, seco y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1019
+    },
+    {
+        "id": 92,
+        "nombre": "Maní / cacahuate",
+        "nombreCientifico": "Arachis hypogaea",
+        "imagen": "mani-cacahuate.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.15000000000000002,
+        "espacioRango": "0,10–0,20 m²/planta",
+        "suelo": "suelto, arenoso, profundo, fértil y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1020
+    },
+    {
+        "id": 93,
+        "nombre": "Topinambur / alcachofa de Jerusalén",
+        "nombreCientifico": "Helianthus tuberosus",
+        "imagen": "topinambur-alcachofa-de-jerusalen.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 12.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.30000000000000004,
+        "espacioRango": "0,20–0,40 m²/planta",
+        "suelo": "fértil, profundo, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1063
+    },
+    {
+        "id": 94,
+        "nombre": "Endibia / achicoria de Bruselas",
+        "nombreCientifico": "Cichorium intybus var. foliosum",
+        "imagen": "endibia-achicoria-de-bruselas.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.07500000000000001,
+        "espacioRango": "0,05–0,10 m²/planta",
+        "suelo": "fértil, profundo, suelto, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1064
+    },
+    {
+        "id": 95,
+        "nombre": "Escarola",
+        "nombreCientifico": "Cichorium endivia",
+        "imagen": "escarola.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, ligero, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1065
+    },
+    {
+        "id": 96,
+        "nombre": "Cardo",
+        "nombreCientifico": "Cynara cardunculus",
+        "imagen": "cardo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1066
+    },
+    {
+        "id": 97,
+        "nombre": "Col china / bok choy",
+        "nombreCientifico": "Brassica rapa subsp. chinensis",
+        "imagen": "col-china-bok-choy.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.11499999999999999,
+        "espacioRango": "0,08–0,15 m²/planta",
+        "suelo": "fértil, húmedo, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1067
+    },
+    {
+        "id": 98,
+        "nombre": "Col napa / repollo chino",
+        "nombreCientifico": "Brassica rapa subsp. pekinensis",
+        "imagen": "col-napa-repollo-chino.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.22499999999999998,
+        "espacioRango": "0,15–0,30 m²/planta",
+        "suelo": "fértil, profundo, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1068
+    },
+    {
+        "id": 99,
+        "nombre": "Colinabo / colirrábano",
+        "nombreCientifico": "Brassica oleracea var. gongylodes",
+        "imagen": "colinabo-colirrabano.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.11499999999999999,
+        "espacioRango": "0,08–0,15 m²/planta",
+        "suelo": "fértil, profundo, suelto, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1069
+    },
+    {
+        "id": 100,
+        "nombre": "Berro",
+        "nombreCientifico": "Nasturtium officinale",
+        "imagen": "berro.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 20.0
+        },
+        "humedad": {
+            "min": 80.0,
+            "max": 100.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "muy húmedo, fértil, rico en materia orgánica; tolera suelos encharcados y cursos de agua limpia.",
+        "luz": "semisombra o sol suave.",
+        "numeroFuente": 1070
+    },
+    {
+        "id": 101,
+        "nombre": "Ruibarbo",
+        "nombreCientifico": "Rheum rhabarbarum",
+        "imagen": "ruibarbo.jpg",
+        "altitud": {
+            "min": 500.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 8.0,
+            "max": 22.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.75,
+        "espacioRango": "0,50–1,00 m²/planta",
+        "suelo": "profundo, fértil, rico en materia orgánica, húmedo pero bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1071
+    },
+    {
+        "id": 102,
+        "nombre": "Hinojo",
+        "nombreCientifico": "Foeniculum vulgare",
+        "imagen": "hinojo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.175,
+        "espacioRango": "0,10–0,25 m²/planta",
+        "suelo": "fértil, ligero, profundo y con buen drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1072
+    },
+    {
+        "id": 103,
+        "nombre": "Perejil",
+        "nombreCientifico": "Petroselinum crispum",
+        "imagen": "perejil.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 24.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.055,
+        "espacioRango": "0,03–0,08 m²/planta",
+        "suelo": "fértil, húmedo, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1073
+    },
+    {
+        "id": 104,
+        "nombre": "Cilantro / culantro",
+        "nombreCientifico": "Coriandrum sativum",
+        "imagen": "cilantro-culantro.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 10.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.035,
+        "espacioRango": "0,02–0,05 m²/planta",
+        "suelo": "fértil, ligero, rico en materia orgánica y con buen drenaje.",
+        "luz": "sol directo o semisombra.",
+        "numeroFuente": 1074
+    },
+    {
+        "id": 105,
+        "nombre": "Albahaca",
+        "nombreCientifico": "Ocimum basilicum",
+        "imagen": "albahaca.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 1500.0
+        },
+        "temperatura": {
+            "min": 20.0,
+            "max": 30.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, ligero, rico en materia orgánica y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1075
+    },
+    {
+        "id": 106,
+        "nombre": "Hierbabuena / menta",
+        "nombreCientifico": "Mentha spicata",
+        "imagen": "hierbabuena-menta.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 60.0,
+            "max": 80.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "fértil, húmedo, rico en materia orgánica y con buen drenaje.",
+        "luz": "semisombra o sol suave.",
+        "numeroFuente": 1076
+    },
+    {
+        "id": 107,
+        "nombre": "Orégano",
+        "nombreCientifico": "Origanum vulgare",
+        "imagen": "oregano.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.175,
+        "espacioRango": "0,10–0,25 m²/planta",
+        "suelo": "ligero, seco, fértil y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1077
+    },
+    {
+        "id": 108,
+        "nombre": "Romero",
+        "nombreCientifico": "Salvia rosmarinus",
+        "imagen": "romero.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 2500.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.375,
+        "espacioRango": "0,25–0,50 m²/planta",
+        "suelo": "ligero, arenoso o pedregoso, seco y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1078
+    },
+    {
+        "id": 109,
+        "nombre": "Tomillo",
+        "nombreCientifico": "Thymus vulgaris",
+        "imagen": "tomillo.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3000.0
+        },
+        "temperatura": {
+            "min": 15.0,
+            "max": 28.0
+        },
+        "humedad": {
+            "min": 40.0,
+            "max": 60.0
+        },
+        "espacioPorPlanta": 0.1,
+        "espacioRango": "0,05–0,15 m²/planta",
+        "suelo": "ligero, seco, arenoso, pobre a moderadamente fértil y con excelente drenaje.",
+        "luz": "sol directo.",
+        "numeroFuente": 1079
+    },
+    {
+        "id": 110,
+        "nombre": "Cebollín / cebolla china",
+        "nombreCientifico": "Allium fistulosum",
+        "imagen": "cebollin-cebolla-china.jpg",
+        "altitud": {
+            "min": 0.0,
+            "max": 3500.0
+        },
+        "temperatura": {
+            "min": 13.0,
+            "max": 25.0
+        },
+        "humedad": {
+            "min": 50.0,
+            "max": 70.0
+        },
+        "espacioPorPlanta": 0.035,
+        "espacioRango": "0,02–0,05 m²/planta",
+        "suelo": "fértil, suelto, rico en materia orgánica, húmedo y bien drenado.",
+        "luz": "sol directo.",
+        "numeroFuente": 1080
+    }
+]
