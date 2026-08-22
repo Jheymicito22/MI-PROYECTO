@@ -2,189 +2,712 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Plantas de Áncash</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+    <!-- =========================================
+         BARRA LATERAL
+    ========================================== -->
 
-    <!-- ==========================================
-         ENCABEZADO
-    =========================================== -->
+    <aside class="sidebar">
 
-    <header>
+        <div class="logo">
 
-        <h1>🌱 Plantas de Áncash</h1>
+            <div class="logo-icon">
+                🌱
+            </div>
 
-        <p>
-            Sistema interactivo para el análisis de cultivos
-        </p>
+            <div>
+                <span>Plantas de</span>
+                <strong>ÁNCASH</strong>
+            </div>
 
-    </header>
+        </div>
 
 
+        <nav>
 
-    <!-- ==========================================
+            <button
+                class="nav-btn activo"
+                onclick="mostrarSeccion('inicio', this)">
+                🔎
+                <span>Buscar planta</span>
+            </button>
+
+
+            <button
+                class="nav-btn"
+                onclick="mostrarSeccion('zona', this)">
+                📍
+                <span>Analizar mi zona</span>
+            </button>
+
+
+            <button
+                class="nav-btn"
+                onclick="mostrarSeccion('recomendaciones', this)">
+                🌱
+                <span>Recomendaciones</span>
+            </button>
+
+
+            <button
+                class="nav-btn"
+                onclick="mostrarSeccion('favoritos', this)">
+                ⭐
+                <span>Mis plantas favoritas</span>
+            </button>
+
+
+            <button
+                class="nav-btn"
+                onclick="mostrarSeccion('mapa', this)">
+                🗺️
+                <span>Mapa de Áncash</span>
+            </button>
+
+
+            <button
+                class="nav-btn proximamente"
+                onclick="mostrarSeccion('calendario', this)">
+                📅
+                <span>Calendario agrícola</span>
+            </button>
+
+
+            <button
+                class="nav-btn proximamente"
+                onclick="mostrarSeccion('plagas', this)">
+                🐛
+                <span>Plagas y enfermedades</span>
+            </button>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="consejo">
+
+                <div class="consejo-icon">
+                    🌿
+                </div>
+
+                <strong>Consejo del día</strong>
+
+                <p>
+                    Conocer tu suelo y clima
+                    es el primer paso para
+                    cultivar con éxito.
+                </p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================
          CONTENIDO PRINCIPAL
-    =========================================== -->
+    ========================================== -->
 
-    <main>
-
-
-        <!-- ======================================
-             MENÚ
-        ======================================= -->
-
-        <section class="menu">
-
-            <button onclick="mostrarSeccion('buscar')">
-                🔎 Buscar planta
-            </button>
+    <main class="contenido">
 
 
-            <button onclick="mostrarSeccion('zona')">
-                🗺️ Analizar mi zona
-            </button>
+        <!-- =====================================
+             CABECERA
+        ====================================== -->
+
+        <header class="topbar">
+
+            <div class="titulo-sistema">
+
+                🌱
+
+                <span>
+                    Sistema <strong>inteligente</strong>
+                    para el análisis de cultivos
+                    en Áncash
+                </span>
+
+            </div>
 
 
-            <button onclick="mostrarSeccion('recomendacion')">
-                🧠 Recomendaciones
-            </button>
+            <div class="estado">
 
-        </section>
+                <span>🌱</span>
+
+                Cuidamos Áncash
+
+                <span>⌄</span>
+
+            </div>
+
+        </header>
 
 
 
-        <!-- ======================================
-             BUSCAR PLANTA
-        ======================================= -->
+        <!-- =====================================
+             INICIO / BUSCADOR
+        ====================================== -->
 
         <section
-            id="buscar"
-            class="seccion"
-        >
-
-            <h2>🔎 Buscar una planta</h2>
+            id="inicio"
+            class="seccion">
 
 
-            <p>
-                Busca una planta para conocer
-                sus condiciones de cultivo.
-            </p>
+            <div class="hero">
 
 
-            <input
-                type="text"
-                id="busqueda"
-                placeholder="Ej. Quinua"
-            >
+                <div class="hero-contenido">
+
+                    <span class="etiqueta">
+                        🌿 Agricultura inteligente
+                    </span>
 
 
-            <button onclick="buscarPlanta()">
-                🔎 Buscar
-            </button>
+                    <h1>
+                        Encuentra la
+                        <span>planta ideal</span>
+                        para tu suelo y clima
+                    </h1>
 
+
+                    <p>
+                        Explora nuestra base de datos
+                        de plantas de Áncash y recibe
+                        recomendaciones según las
+                        condiciones de tu zona.
+                    </p>
+
+
+                    <!-- BUSCADOR -->
+
+                    <div class="buscador">
+
+                        <span>🔎</span>
+
+                        <input
+                            type="text"
+                            id="busqueda"
+                            placeholder="Busca una planta..."
+                            onkeydown="buscarConEnter(event)"
+                        >
+
+                        <button
+                            onclick="buscarPlanta()">
+                            Buscar →
+                        </button>
+
+                    </div>
+
+
+                    <div class="ejemplos">
+
+                        Ejemplos:
+
+                        <button
+                            onclick="buscarEjemplo('Papa')">
+                            Papa
+                        </button>
+
+                        <button
+                            onclick="buscarEjemplo('Quinua')">
+                            Quinua
+                        </button>
+
+                        <button
+                            onclick="buscarEjemplo('Haba')">
+                            Haba
+                        </button>
+
+                        <button
+                            onclick="buscarEjemplo('Oca')">
+                            Oca
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TARJETA DESTACADA -->
+
+                <div class="hero-planta">
+
+                    <div class="planta-imagen">
+                        🌻
+                    </div>
+
+                    <div>
+
+                        <span class="recomendado">
+                            Cultivo recomendado
+                        </span>
+
+                        <h2>
+                            Plantas de Áncash
+                        </h2>
+
+                        <p>
+                            Explora especies adecuadas
+                            para diferentes zonas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RESULTADO DE BÚSQUEDA -->
 
             <div id="resultadoBusqueda"></div>
 
+
+
+            <!-- =================================
+                 TARJETAS PRINCIPALES
+            ================================== -->
+
+            <div class="grid-principal">
+
+
+                <!-- ANALIZAR ZONA -->
+
+                <div class="card">
+
+                    <div class="card-titulo">
+
+                        <span class="card-icon">
+                            📍
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Analizar mi zona
+                            </h2>
+
+                            <p>
+                                Encuentra los cultivos
+                                adecuados para tu terreno.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="boton-principal"
+                        onclick="mostrarSeccion('zona')">
+
+                        🌱 Analizar zona
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- RECOMENDACIONES -->
+
+                <div class="card">
+
+                    <div class="card-titulo">
+
+                        <span class="card-icon">
+                            🌱
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Recomendaciones
+                            </h2>
+
+                            <p>
+                                Plantas ideales para tu zona.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="miniRecomendaciones"
+                        class="mini-recomendaciones">
+
+                        <p>
+                            Analiza tu zona para recibir
+                            recomendaciones.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONDICIONES -->
+
+                <div class="card condiciones-card">
+
+                    <h2>
+                        🌦️ Condiciones de tu zona
+                    </h2>
+
+                    <div
+                        id="condiciones"
+                        class="condiciones">
+
+                        <div>
+
+                            <span>⛰️</span>
+
+                            <strong id="condAltitud">
+                                --
+                            </strong>
+
+                            <small>
+                                Altitud
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>🌡️</span>
+
+                            <strong id="condTemperatura">
+                                --
+                            </strong>
+
+                            <small>
+                                Temperatura
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>💧</span>
+
+                            <strong id="condHumedad">
+                                --
+                            </strong>
+
+                            <small>
+                                Humedad
+                            </small>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>📐</span>
+
+                            <strong id="condArea">
+                                --
+                            </strong>
+
+                            <small>
+                                Área
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <p id="condLugar">
+                        Ingresa los datos de tu zona.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================
+                 CATEGORÍAS
+            ================================== -->
+
+            <div class="seccion-titulo">
+
+                <div>
+
+                    <span>
+                        🌾 Explora
+                    </span>
+
+                    <h2>
+                        Categorías
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="categorias">
+
+                <button
+                    onclick="filtrarCategoria('tuberculo')">
+
+                    🥔
+
+                    <strong>
+                        Tubérculos
+                    </strong>
+
+                    <small>
+                        Papa · Oca · Olluco
+                    </small>
+
+                </button>
+
+
+                <button
+                    onclick="filtrarCategoria('cereal')">
+
+                    🌾
+
+                    <strong>
+                        Cereales
+                    </strong>
+
+                    <small>
+                        Quinua
+                    </small>
+
+                </button>
+
+
+                <button
+                    onclick="filtrarCategoria('leguminosa')">
+
+                    🌱
+
+                    <strong>
+                        Leguminosas
+                    </strong>
+
+                    <small>
+                        Haba
+                    </small>
+
+                </button>
+
+
+                <button
+                    onclick="mostrarTodasLasPlantas()">
+
+                    🌿
+
+                    <strong>
+                        Ver todas
+                    </strong>
+
+                    <small>
+                        Explorar catálogo
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <div id="resultadoCategoria"></div>
+
+
+
+            <!-- =================================
+                 INFORMACIÓN
+            ================================== -->
+
+            <div class="info-final">
+
+                <div>
+
+                    🌱
+
+                    <strong>
+                        Información confiable
+                    </strong>
+
+                    <span>
+                        Datos organizados para Áncash.
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    🎯
+
+                    <strong>
+                        Recomendaciones
+                    </strong>
+
+                    <span>
+                        Según suelo y clima.
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    🌾
+
+                    <strong>
+                        Agricultura sostenible
+                    </strong>
+
+                    <span>
+                        Para un futuro más verde.
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    🛡️
+
+                    <strong>
+                        Apoyo local
+                    </strong>
+
+                    <span>
+                        Pensado para agricultores.
+                    </span>
+
+                </div>
+
+            </div>
+
         </section>
 
 
 
-        <!-- ======================================
+        <!-- =====================================
              ANALIZAR ZONA
-        ======================================= -->
+        ====================================== -->
 
         <section
             id="zona"
-            class="seccion oculto"
-        >
-
-            <h2>🗺️ Analizar mi zona</h2>
+            class="seccion oculto">
 
 
-            <p>
-                Introduce las condiciones de tu
-                terreno para descubrir qué plantas
-                pueden cultivarse.
-            </p>
+            <div class="pagina-titulo">
+
+                <span>
+                    📍
+                </span>
+
+                <div>
+
+                    <h1>
+                        Analizar mi zona
+                    </h1>
+
+                    <p>
+                        Introduce las condiciones de
+                        tu terreno para descubrir qué
+                        plantas pueden cultivarse.
+                    </p>
+
+                </div>
+
+            </div>
 
 
+            <div class="formulario-zona">
 
-            <label for="lugar">
-                📍 Lugar
-            </label>
+                <label>
+                    📍 Lugar
+                </label>
 
-            <input
-                type="text"
-                id="lugar"
-                placeholder="Ej. Huaraz"
-            >
-
-
-
-            <label for="altitud">
-                ⛰️ Altitud (metros)
-            </label>
-
-            <input
-                type="number"
-                id="altitud"
-                placeholder="Ej. 3050"
-            >
+                <input
+                    type="text"
+                    id="lugar"
+                    placeholder="Ej. Huaraz"
+                >
 
 
+                <label>
+                    ⛰️ Altitud (metros)
+                </label>
 
-            <label for="temperatura">
-                🌡️ Temperatura (°C)
-            </label>
-
-            <input
-                type="number"
-                id="temperatura"
-                step="0.1"
-                placeholder="Ej. 17.5"
-            >
+                <input
+                    type="number"
+                    id="altitud"
+                    placeholder="Ej. 3050"
+                >
 
 
+                <label>
+                    🌡️ Temperatura (°C)
+                </label>
 
-            <label for="humedad">
-                💧 Humedad del suelo (%)
-            </label>
-
-            <input
-                type="number"
-                id="humedad"
-                placeholder="Ej. 60"
-            >
-
-
-
-            <label for="area">
-                📐 Área disponible (m²)
-            </label>
-
-            <input
-                type="number"
-                id="area"
-                step="0.1"
-                placeholder="Ej. 20"
-            >
+                <input
+                    type="number"
+                    id="temperatura"
+                    step="0.1"
+                    placeholder="Ej. 17.5"
+                >
 
 
+                <label>
+                    💧 Humedad del suelo (%)
+                </label>
 
-            <button onclick="analizarZona()">
-                🧠 ANALIZAR ZONA
-            </button>
+                <input
+                    type="number"
+                    id="humedad"
+                    placeholder="Ej. 60"
+                >
+
+
+                <label>
+                    📐 Área disponible (m²)
+                </label>
+
+                <input
+                    type="number"
+                    id="area"
+                    step="0.1"
+                    placeholder="Ej. 20"
+                >
+
+
+                <button
+                    class="boton-principal"
+                    onclick="analizarZona()">
+
+                    🧠 Analizar mi zona
+
+                </button>
+
+            </div>
 
 
             <div id="resultadoZona"></div>
@@ -193,38 +716,325 @@
 
 
 
-        <!-- ======================================
+        <!-- =====================================
              RECOMENDACIONES
-        ======================================= -->
+        ====================================== -->
 
         <section
-            id="recomendacion"
-            class="seccion oculto"
-        >
-
-            <h2>🧠 Recomendaciones</h2>
+            id="recomendaciones"
+            class="seccion oculto">
 
 
-            <p>
-                Estas son las plantas más adecuadas
-                según las condiciones de tu zona.
-            </p>
+            <div class="pagina-titulo">
+
+                <span>
+                    🌱
+                </span>
+
+                <div>
+
+                    <h1>
+                        Recomendaciones
+                    </h1>
+
+                    <p>
+                        Plantas compatibles con las
+                        condiciones de tu zona.
+                    </p>
+
+                </div>
+
+            </div>
 
 
             <div id="resultadoRecomendacion">
 
-                <div class="ficha-planta">
+                <div class="mensaje-vacio">
 
-                    <h3>🌱 Todavía no hay un análisis</h3>
+                    <span>
+                        🌱
+                    </span>
+
+                    <h2>
+                        Todavía no hay recomendaciones
+                    </h2>
 
                     <p>
-                        Primero ve a
-                        <strong>🗺️ Analizar mi zona</strong>,
-                        introduce las condiciones de tu terreno
-                        y pulsa <strong>ANALIZAR ZONA</strong>.
+                        Primero analiza tu zona para
+                        que el sistema pueda determinar
+                        qué plantas son adecuadas.
+                    </p>
+
+                    <button
+                        onclick="mostrarSeccion('zona')">
+
+                        📍 Analizar mi zona
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             FAVORITOS
+        ====================================== -->
+
+        <section
+            id="favoritos"
+            class="seccion oculto">
+
+
+            <div class="pagina-titulo">
+
+                <span>
+                    ⭐
+                </span>
+
+                <div>
+
+                    <h1>
+                        Mis plantas favoritas
+                    </h1>
+
+                    <p>
+                        Guarda las plantas que quieres
+                        consultar posteriormente.
                     </p>
 
                 </div>
+
+            </div>
+
+
+            <div id="listaFavoritos"></div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MAPA INTERACTIVO DE ÁNCASH
+        ====================================== -->
+
+        <section
+            id="mapa"
+            class="seccion oculto">
+
+
+            <div class="pagina-titulo">
+
+                <span>
+                    🗺️
+                </span>
+
+                <div>
+
+                    <h1>
+                        Mapa interactivo de Áncash
+                    </h1>
+
+                    <p>
+                        Selecciona una provincia para
+                        explorar sus plantas y cultivos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="mapa-contenedor">
+
+
+                <!-- CABECERA DEL MAPA -->
+
+                <div class="mapa-cabecera">
+
+                    <div>
+
+                        <span class="mapa-etiqueta">
+                            🌿 TERRITORIO DE ÁNCASH
+                        </span>
+
+                        <h2>
+                            Selecciona una provincia
+                        </h2>
+
+                        <p>
+                            Haz clic sobre una provincia
+                            del mapa para consultar su
+                            información.
+                        </p>
+
+                    </div>
+
+
+                    <div class="mapa-indicador">
+
+                        <span class="punto-verde"></span>
+
+                        Provincia seleccionable
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ÁREA DEL MAPA -->
+
+                <div class="mapa-area">
+
+
+                    <!-- MAPA -->
+
+                    <div class="mapa-svg">
+
+                        <object
+                            data="mapa/ancash.svg"
+                            type="image/svg+xml"
+                            id="mapaAncash"
+                            aria-label="Mapa interactivo de las provincias de Áncash"
+                        ></object>
+
+                    </div>
+
+
+
+                    <!-- INFORMACIÓN DE PROVINCIA -->
+
+                    <div
+                        id="informacionProvincia"
+                        class="info-provincia">
+
+
+                        <div class="info-provincia-vacia">
+
+                            <span>
+                                📍
+                            </span>
+
+                            <h3>
+                                Selecciona una provincia
+                            </h3>
+
+                            <p>
+                                Haz clic en una provincia
+                                del mapa para comenzar.
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CALENDARIO
+        ====================================== -->
+
+        <section
+            id="calendario"
+            class="seccion oculto">
+
+
+            <div class="pagina-titulo">
+
+                <span>
+                    📅
+                </span>
+
+                <div>
+
+                    <h1>
+                        Calendario agrícola
+                    </h1>
+
+                    <p>
+                        Próximamente podrás consultar
+                        las temporadas de siembra y cosecha.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proximamente-box">
+
+                📅
+
+                <h2>
+                    Calendario agrícola
+                </h2>
+
+                <p>
+                    Esta sección se conectará con la
+                    información de cada cultivo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PLAGAS
+        ====================================== -->
+
+        <section
+            id="plagas"
+            class="seccion oculto">
+
+
+            <div class="pagina-titulo">
+
+                <span>
+                    🐛
+                </span>
+
+                <div>
+
+                    <h1>
+                        Plagas y enfermedades
+                    </h1>
+
+                    <p>
+                        Identificación y prevención
+                        de problemas agrícolas.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="proximamente-box">
+
+                🐛
+
+                <h2>
+                    Centro fitosanitario
+                </h2>
+
+                <p>
+                    Aquí incorporaremos información
+                    sobre plagas, enfermedades,
+                    prevención y alternativas naturales.
+                </p>
 
             </div>
 
@@ -235,9 +1045,9 @@
 
 
 
-    <!-- ==========================================
+    <!-- =========================================
          JAVASCRIPT
-    =========================================== -->
+    ========================================== -->
 
     <script src="script.js"></script>
 
