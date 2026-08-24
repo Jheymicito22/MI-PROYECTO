@@ -1910,3 +1910,175 @@ body {
         height: 400px;
     }
 }
+
+
+/* =========================================
+   FONDO ANDINO DIFUMINADO
+   No altera el contenido ni la tipografía.
+========================================= */
+
+body {
+    position: relative;
+    background: #eef5ef;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("fondo-andes.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(7px);
+    transform: scale(1.04);
+    opacity: 0.42;
+    pointer-events: none;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(248, 251, 247, 0.58);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   CENTRO DE INSECTOS Y BICHOS
+   Agregado sin alterar el diseño existente
+========================================= */
+
+.bichos-panel{width:100%;}
+.bichos-selector{background:rgba(255,255,255,.88);border:1px solid rgba(54,96,62,.14);border-radius:18px;padding:20px 22px;margin-bottom:18px;box-shadow:0 8px 24px rgba(38,66,43,.08);backdrop-filter:blur(8px);}
+.bichos-selector label{display:block;font-weight:700;color:#315d39;margin-bottom:8px;font-size:14px;}
+.bichos-selector select{width:100%;max-width:520px;padding:12px 14px;border:1px solid #cbdaca;border-radius:10px;background:#fff;color:#36513c;font-size:15px;outline:none;}
+.bichos-selector select:focus{border-color:#65936d;box-shadow:0 0 0 3px rgba(101,147,109,.12);}
+.bichos-nota{margin:10px 0 0;color:#748078;font-size:11px;line-height:1.5;max-width:850px;}
+.bichos-vacio{background:rgba(255,255,255,.84);border-radius:18px;padding:42px 25px;text-align:center;border:1px solid rgba(54,96,62,.12);}
+.bichos-vacio span{font-size:42px;display:block;margin-bottom:10px;}
+.bichos-vacio h2{margin:0 0 8px;color:#315d39;font-size:21px;}
+.bichos-vacio p{margin:0 auto;color:#748078;max-width:600px;line-height:1.6;font-size:13px;}
+.lista-bichos-provincia{display:flex;flex-direction:column;gap:16px;}
+.bicho-card{display:grid;grid-template-columns:minmax(230px,34%) 1fr;background:rgba(255,255,255,.92);border:1px solid rgba(54,96,62,.14);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(38,66,43,.08);backdrop-filter:blur(7px);}
+.bicho-imagen{min-height:300px;background:#e8eee5;overflow:hidden;}
+.bicho-imagen img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block;}
+.bicho-info{padding:20px 22px;}
+.bicho-superior{display:flex;justify-content:space-between;align-items:flex-start;gap:15px;margin-bottom:7px;}
+.bicho-superior h3{margin:0;color:#315d39;font-size:21px;line-height:1.2;}
+.bicho-cientifico{font-size:12px;color:#76827a;font-style:italic;margin:5px 0 13px;}
+.bicho-badge{white-space:nowrap;border-radius:20px;padding:6px 10px;background:#edf5ea;color:#47704d;font-size:10px;font-weight:700;}
+.bicho-datos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px;}
+.bicho-dato{background:#f4f8f3;border-radius:10px;padding:10px 11px;}
+.bicho-dato strong{display:block;font-size:11px;color:#416447;margin-bottom:3px;}
+.bicho-dato span{display:block;font-size:11px;color:#6f7b73;line-height:1.45;}
+.bicho-seccion{margin-top:13px;}
+.bicho-seccion h4{margin:0 0 4px;color:#3b6241;font-size:12px;}
+.bicho-seccion p{margin:0;color:#69766e;font-size:11px;line-height:1.55;}
+.bicho-fuente{margin-top:14px;padding-top:10px;border-top:1px solid #e2e9e1;color:#7b857e;font-size:10px;line-height:1.45;}
+.bicho-fuente strong{color:#52665a;}
+@media(max-width:800px){.bicho-card{grid-template-columns:1fr}.bicho-imagen,.bicho-imagen img{min-height:230px;height:230px}.bicho-datos{grid-template-columns:1fr}.bicho-superior{flex-direction:column}.bicho-badge{align-self:flex-start}}
+
+
+/* =========================================
+   IMAGENES DE BICHOS - CARGA ROBUSTA
+   Acepta JPG, JPEG, PNG, WEBP o SVG.
+========================================= */
+.bicho-imagen{position:relative;display:flex;align-items:center;justify-content:center;}
+.bicho-imagen img{position:relative;z-index:1;}
+.bicho-imagen-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:#637168;background:#e8eee5;z-index:0;}
+.bicho-imagen-fallback span{font-size:38px;margin-bottom:8px;}
+.bicho-imagen-fallback p{margin:0 0 3px;font-size:12px;}
+.bicho-imagen-fallback strong{font-size:13px;color:#416447;}
+.bicho-imagen-fallback small{margin-top:8px;font-size:10px;color:#7b857e;}
+.bicho-imagen-fallback:not(.visible){display:none;}
+
+
+/* =====================================================
+   FOTOGRAFÍAS DE BICHOS - SELECCIÓN DESDE LA PC
+   No cambia el diseño de la ficha; solo permite
+   reemplazar la imagen por una fotografía del usuario.
+===================================================== */
+.bicho-imagen{position:relative;}
+.bicho-imagen img{position:relative;z-index:1;}
+.bicho-imagen-fallback{position:absolute;inset:0;z-index:2;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;color:#637168;background:#e8eee5;}
+.bicho-imagen-fallback.visible{display:flex;}
+.bicho-imagen-fallback span{font-size:38px;margin-bottom:8px;}
+.bicho-imagen-fallback p{margin:0 0 3px;font-size:12px;}
+.bicho-imagen-fallback strong{font-size:13px;color:#416447;max-width:90%;}
+.bicho-imagen-fallback small{margin-top:8px;font-size:10px;color:#7b857e;}
+.boton-elegir-bicho{margin-top:12px;display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border-radius:10px;background:#397f47;color:#fff;font-size:12px;font-weight:700;cursor:pointer;}
+.boton-elegir-bicho:hover{filter:brightness(1.06);}
+.boton-cambiar-bicho{position:absolute;right:10px;bottom:10px;z-index:3;display:none;border:0;border-radius:9px;padding:8px 11px;background:rgba(255,255,255,.93);color:#315d39;font-size:11px;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(30,60,35,.14);}
+.boton-cambiar-bicho.visible{display:block;}
+.bicho-foto-activa{display:block!important;}
+
+/* IMAGENES PREDETERMINADAS: sin selector de archivos */
+.bicho-imagen .boton-elegir-bicho,.bicho-imagen .boton-cambiar-bicho{display:none!important;}
+
+/* =====================================================
+   FOTOGRAFÍAS PREDETERMINADAS DE PLAGAS - SOLO JPG
+   El visitante no puede reemplazarlas desde la página.
+   ===================================================== */
+.bicho-imagen {
+    position: relative;
+    overflow: hidden;
+    background: #e8eee5;
+}
+
+.bicho-imagen img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.bicho-imagen-fallback {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #637168;
+    background: #e8eee5;
+}
+
+.bicho-imagen-fallback.visible {
+    display: flex;
+}
+
+.bicho-imagen-fallback span {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.bicho-imagen-fallback p {
+    margin: 0 0 3px;
+    font-size: 13px;
+}
+
+.bicho-imagen-fallback small {
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+@media(max-width:800px){
+    .bicho-imagen,
+    .bicho-imagen img {
+        min-height: 230px;
+        height: 230px;
+    }
+}

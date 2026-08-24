@@ -83,7 +83,7 @@
 
 
             <button
-                class="nav-btn proximamente"
+                class="nav-btn"
                 onclick="mostrarSeccion('plagas', this)">
                 🐛
                 <span>Plagas y enfermedades</span>
@@ -1022,19 +1022,24 @@
             </div>
 
 
-            <div class="proximamente-box">
+            <div class="bichos-panel">
 
-                🐛
+                <div class="bichos-selector">
+                    <label for="selectorProvinciaBichos">Selecciona una provincia</label>
+                    <select id="selectorProvinciaBichos">
+                        <option value="">-- Elige una provincia --</option>
+                        <option>Aija</option><option>Antonio Raymondi</option><option>Asunción</option><option>Bolognesi</option><option>Carhuaz</option><option>Carlos Fermín Fitzcarrald</option><option>Casma</option><option>Corongo</option><option>Huaraz</option><option>Huari</option><option>Huarmey</option><option>Huaylas</option><option>Mariscal Luzuriaga</option><option>Ocros</option><option>Pallasca</option><option>Pomabamba</option><option>Recuay</option><option>Santa</option><option>Sihuas</option><option>Yungay</option>
+                    </select>
+                    <p class="bichos-nota">Información fitosanitaria basada en registros y vigilancia de SENASA/INIA. No se presenta como confirmación provincial cuando la fuente solo es regional.</p>
+                </div>
 
-                <h2>
-                    Centro fitosanitario
-                </h2>
+                <div id="bichosProvinciaVacia" class="bichos-vacio">
+                    <span>🐞</span>
+                    <h2>Selecciona una provincia</h2>
+                    <p>Verás 3 tipos de bichos o plagas agrícolas, sus condiciones, daños, nivel de riesgo y alternativas de manejo natural.</p>
+                </div>
 
-                <p>
-                    Aquí incorporaremos información
-                    sobre plagas, enfermedades,
-                    prevención y alternativas naturales.
-                </p>
+                <div id="listaBichosProvincia" class="lista-bichos-provincia"></div>
 
             </div>
 

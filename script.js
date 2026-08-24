@@ -350,11 +350,16 @@ function mostrarFichaPlanta(
                 <div class="ficha-imagen">
 
                     <img
-                        src="imagenes/${planta.imagen}"
+                        src="imagenes/plantas/${planta.imagen}"
                         alt="Imagen de ${planta.nombre}"
                         onerror="
-                            this.style.display='none';
-                            this.parentElement.classList.add('sin-imagen');
+                            if (!this.dataset.reintento) {
+                                this.dataset.reintento = '1';
+                                this.src = 'imagenes/' + '${planta.imagen}';
+                            } else {
+                                this.style.display='none';
+                                this.parentElement.classList.add('sin-imagen');
+                            }
                         "
                     >
 
@@ -1753,4 +1758,138 @@ function obtenerRangosClimaticos(lista) {
 
 window.addEventListener("load", function () {
     inicializarMapaAncash();
+});
+
+
+// =====================================================
+// CENTRO DE INSECTOS Y BICHOS
+// =====================================================
+
+let baseBichosAncash = {};
+
+async function cargarBichosAncash(){
+    try{
+        const respuesta = await fetch("datos/bichos.json");
+        if(!respuesta.ok) throw new Error("No se encontró datos/bichos.json");
+        const datos = await respuesta.json();
+        baseBichosAncash = datos.provincias || {};
+        prepararSelectorBichos();
+    }catch(error){
+        console.error("Error cargando bichos:", error);
+    }
+}
+
+function prepararSelectorBichos(){
+    const selector=document.getElementById("selectorProvinciaBichos");
+    if(!selector) return;
+    selector.addEventListener("change", function(){
+        mostrarBichosProvincia(this.value);
+    });
+}
+
+function mostrarBichosProvincia(provincia){
+    const vacio=document.getElementById("bichosProvinciaVacia");
+    const lista=document.getElementById("listaBichosProvincia");
+    if(!vacio || !lista) return;
+    if(!provincia){
+        vacio.style.display="block";
+        lista.innerHTML="";
+        return;
+    }
+    const bichos=baseBichosAncash[provincia] || [];
+    vacio.style.display="none";
+    lista.innerHTML=bichos.map((bicho,index)=>crearTarjetaBicho(bicho,index+1)).join("");
+}
+
+function crearTarjetaBicho(bicho,numero){
+    // La imagen es PREDETERMINADA y se toma directamente de bicho.imagen.
+    // No hay selector de archivos ni posibilidad de cambiarla desde la página.
+    const rutaImagen = normalizarRutaImagenBicho(bicho.imagen);
+
+    return `
+        <article class="bicho-card">
+            <div class="bicho-imagen">
+                <img
+                    src="${escapeHtml(rutaImagen)}"
+                    alt="Imagen de ${escapeHtml(bicho.nombre)}"
+                    loading="lazy"
+                    onload="imagenBichoCargada(this)"
+                    onerror="imagenBichoNoEncontrada(this)"
+                >
+
+                <div class="bicho-imagen-fallback">
+                    <span>🖼️</span>
+                    <p>Coloca aquí la fotografía predeterminada.</p>
+                    <small>Formato: JPG</small>
+                </div>
+            </div>
+
+            <div class="bicho-info">
+                <div class="bicho-superior">
+                    <div>
+                        <h3>${numero}. ${escapeHtml(bicho.nombre)}</h3>
+                        <p class="bicho-cientifico">${escapeHtml(bicho.cientifico)}</p>
+                    </div>
+                    <span class="bicho-badge">${escapeHtml(bicho.tipo)}</span>
+                </div>
+
+                <div class="bicho-datos">
+                    <div class="bicho-dato"><strong>📏 Tamaño</strong><span>${escapeHtml(bicho.tamano)}</span></div>
+                    <div class="bicho-dato"><strong>⚠️ Peligrosidad</strong><span>${escapeHtml(bicho.peligro)}</span></div>
+                    <div class="bicho-dato"><strong>🌦️ ¿Dónde vive?</strong><span>${escapeHtml(bicho.condiciones)}</span></div>
+                    <div class="bicho-dato"><strong>🌱 ¿Qué afecta?</strong><span>${escapeHtml(bicho.afecta)}</span></div>
+                </div>
+
+                <div class="bicho-seccion"><h4>🐛 ¿Qué daño provoca?</h4><p>${escapeHtml(bicho.daño)}</p></div>
+                <div class="bicho-seccion"><h4>🌿 ¿Cómo controlarlo naturalmente?</h4><p>${escapeHtml(bicho.control)}</p></div>
+                <div class="bicho-fuente"><strong>Fuente:</strong> ${escapeHtml(bicho.fuente)}</div>
+            </div>
+        </article>
+    `;
+}
+
+function normalizarSinTildes(texto){
+    return String(texto || '')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+}
+
+function normalizarRutaImagenBicho(ruta){
+    const valor = String(ruta || '').trim();
+    if(!valor) return '';
+
+    if(valor.startsWith('http://') || valor.startsWith('https://')){
+        return valor;
+    }
+
+    if(valor.startsWith('imagenes/')){
+        return valor;
+    }
+
+    // Todas las fotos predeterminadas del proyecto son JPG.
+    return 'imagenes/' + valor.replace(/^\/+/, '');
+}
+
+function imagenBichoCargada(img){
+    img.style.display = 'block';
+    img.classList.add('bicho-foto-activa');
+
+    const fallback = img.parentElement.querySelector('.bicho-imagen-fallback');
+    if(fallback) fallback.classList.remove('visible');
+}
+
+function imagenBichoNoEncontrada(img){
+    img.style.display = 'none';
+    const fallback = img.parentElement.querySelector('.bicho-imagen-fallback');
+    if(fallback) fallback.classList.add('visible');
+}
+
+function escapeHtml(valor){
+    return String(valor ?? "").replace(/[&<>'"]/g,function(c){
+        return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c];
+    });
+}
+
+window.addEventListener("load", function(){
+    cargarBichosAncash();
 });
